@@ -1,0 +1,133 @@
+/* details.css */
+
+/* Game Video Section */
+.game-video-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .video-wrapper {
+    margin: 0 auto;
+    width: 1152px;
+    height: 644px;
+  }
+  .video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .game-title {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #e29ba7; /* Pink */
+  }
+  
+  /* Feedback Section */
+  .feedback-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .feedback-section h2 {
+    color: #e29ba7; /* Pink title */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .feedback-section blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  /* Cards Section */
+  .cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  .cards-section .card {
+    width: 568px;
+    height: 264px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .cards-section .card h2 {
+    margin-top: 0;
+    color: #e29ba7; /* Pink */
+  }
+  
+  /* Team Photo Section */
+  .team-photo-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .team-photo-section h2 {
+    color: #e29ba7; /* Pink */
+  }
+  .team-photo-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Full-Width Sections for Introduction and What I Learned */
+  .full-section {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+  }
+  .full-section .section-title {
+    color: #e29ba7; /* Pink */
+    margin-top: 0;
+  }
+  .project-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .project-info-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .project-info-list li i {
+    margin-right: 8px;
+    color: #e29ba7; /* Optional: Use pink for the icons */
+  }
+  /* Back Button */
+  .back-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #00C4B4; /* Green */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    z-index: 10000; /* Increased z-index so it sits above the header */
+  }
+  
+  
+  /* Details Footer */
+  .details-footer {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 1.1rem;
+  }
+  
+  .details-footer a {
+    color: #00C4B4; /* Green */
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .details-footer a:hover {
+    text-decoration: underline;
+  }
+  

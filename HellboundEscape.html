@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hellbound Escape - Details</title>
+  <!-- Load Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Load Google Fonts for Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to main and details CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+  <!-- Go Back Button -->
+  <a href="index.html" class="back-btn">Go Back</a>
+  
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="profile-text-top">
+        <h1>Shannon Grant</h1>
+        <p class="title">Game Programmer</p>
+      </div>
+      <div class="social-links">
+        <a href="https://uk.linkedin.com/in/shannon-grant-390736309" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://milkobop.itch.io/" target="_blank" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a>
+        <a href="https://www.youtube.com/@Milkobop" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="CV.pdf" target="_blank" class="cv-btn" aria-label="CV">CV</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="details-container">
+    <!-- Video Section -->
+    <section class="game-video-section">
+      <div class="video-wrapper">
+        <iframe width="1152" height="644"
+          src="https://www.youtube.com/embed/WOweDd9oBq0?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0"
+          title="Hellbound Escape" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <h1 class="game-title">Hellbound Escape</h1>
+    </section>
+    
+    <!-- Cards Section: About & Project Info -->
+    <section class="cards-section">
+      <!-- About Card -->
+      <div class="card" id="about-card">
+        <h2>About</h2>
+        <p>
+          Hellbound Escape is a 2D dungeon crawler prototype inspired by titles like The Binding of Isaac. Developed using object‑oriented programming techniques in Unity, the game features self‑made assets and dynamic AI. Enemies patrol randomly when distant, but chase the player when in range. Items like a speed‑boosting screw, a healing potion, and boots that permanently increase speed are programmed to affect gameplay uniquely.
+        </p>
+      </div>
+      <!-- Project Info Card -->
+      <div class="card" id="project-info-card">
+        <h2>Project Info</h2>
+        <ul class="project-info-list">
+          <li><i class="fas fa-gamepad"></i> Role: Gameplay Programmer</li>
+          <li><i class="fas fa-users"></i> Team Size: 1</li>
+          <li><i class="fas fa-clock"></i> 4 Weeks</li>
+          <li><i class="fas fa-code"></i> OOP Programming</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Full-Width Sections -->
+    <section class="full-section" id="introduction">
+      <h2 class="section-title">Introduction</h2>
+      <p>
+        In Hellbound Escape, the prototype was built to test the viability of a dungeon crawler using OOP principles. The enemy AI and item mechanics were iteratively refined through playtesting. For more technical details on the implementation, please refer to my GitHub and itch.io pages.
+      </p>
+    </section>
+    <section class="full-section" id="what-i-learned">
+      <h2 class="section-title">What I Learned</h2>
+      <p>
+        I learned a great deal about structuring code for dynamic enemy behavior, balancing gameplay through item effects, and ensuring responsive controls in Unity. The project helped me understand the benefits and challenges of OOP in game design.
+      </p>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="details-footer">
+    <p>
+      <a href="https://milkobop.itch.io/hellbound" target="_blank">Play Hellbound Escape on itch.io</a>
+      or
+      <a href="https://github.com/milkobop" target="_blank">Check out the repository at GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>

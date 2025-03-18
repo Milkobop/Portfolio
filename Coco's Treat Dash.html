@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coco's Treat Dash - Details</title>
+  <!-- Load Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Load Google Fonts for Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to main and details CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+  <!-- Go Back Button -->
+  <a href="index.html" class="back-btn">Go Back</a>
+  
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="profile-text-top">
+        <h1>Shannon Grant</h1>
+        <p class="title">Game Programmer</p>
+      </div>
+      <div class="social-links">
+        <a href="https://uk.linkedin.com/in/shannon-grant-390736309" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://milkobop.itch.io/" target="_blank" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a>
+        <a href="https://www.youtube.com/@Milkobop" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="CV.pdf" target="_blank" class="cv-btn" aria-label="CV">CV</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="details-container">
+    <!-- Video Section -->
+    <section class="game-video-section">
+      <div class="video-wrapper">
+        <video controls width="1152" height="644">
+          <source src="videoplayback.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <h1 class="game-title">Coco's Treat Dash</h1>
+    </section>
+    
+    <!-- Cards Section: About & Project Info -->
+    <section class="cards-section">
+      <!-- About Card -->
+      <div class="card" id="about-card">
+        <h2>About</h2>
+        <p>
+          Coco’s Treat Dash began as a first‐year group project, inspired by classic arcade titles. In this 3D action/simulation game (reminiscent of Pac‑Man), you play as Coco, a cute dog navigating a park, collecting treats and avoiding obstacles – including curious humans! I spearheaded game mechanics such as the bark ability, enemy behavior, and dynamic power‑ups, while also contributing to animations, terrain design, and UI icon development.
+        </p>
+      </div>
+      <!-- Project Info Card -->
+      <div class="card" id="project-info-card">
+        <h2>Project Info</h2>
+        <ul class="project-info-list">
+          <li><i class="fas fa-gamepad"></i> Role: Gameplay Programmer</li>
+          <li><i class="fas fa-users"></i> Team Size: 3</li>
+          <li><i class="fas fa-clock"></i> 6 Weeks</li>
+          <li><i class="fab fa-unity"></i> Engine: Unity (C#)</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Team Photo Section -->
+    <section class="team-photo-section">
+      <h2>Team Photo</h2>
+      <img src="cocos-treat-dash-team-photo.jpg" alt="Team Photo">
+    </section>
+    
+    <!-- Full-Width Sections -->
+    <section class="full-section" id="introduction">
+      <h2 class="section-title">Introduction</h2>
+      <p>
+        The game challenges you to use speed, strategy, and power-ups as you guide Coco through a busy park. From enemy AI to the responsive bark mechanic, every element was iterated on and refined through extensive playtesting.
+      </p>
+    </section>
+    <section class="full-section" id="what-i-learned">
+      <h2 class="section-title">What I Learned</h2>
+      <p>
+        Working on Coco’s Treat Dash improved my skills in real-time game mechanics, animation integration, and user interface design. I also gained experience in collaborating with a team, managing assets, and troubleshooting performance issues in Unity. Check out my GitHub/itch.io for further insights.
+      </p>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="details-footer">
+    <p>
+      <a href="https://milkobop.itch.io/cocos-treat-dash" target="_blank">Play Coco's Treat Dash on itch.io</a>
+      or
+      <a href="https://github.com/milkobop" target="_blank">Check out the repository at GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>

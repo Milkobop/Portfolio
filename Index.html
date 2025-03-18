@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shannon Grant - Portfolio</title>
+  <!-- Load Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Load Google Fonts for Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to your custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Inline override if needed */
+    .profile-section .description {
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="profile-text-top">
+        <h1>Shannon Grant</h1>
+        <p class="title">Game Programmer</p>
+      </div>
+      <div class="social-links">
+        <a href="https://uk.linkedin.com/in/shannon-grant-390736309" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://milkobop.itch.io/" target="_blank" aria-label="Itch.io">
+          <i class="fab fa-itch-io"></i>
+        </a>
+        <a href="https://www.youtube.com/@Milkobop" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="CV.pdf" target="_blank" class="cv-btn" aria-label="CV">CV</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- About Section (Photo & Description) -->
+  <section class="about-me">
+    <!-- Added extra top margin via CSS to avoid header overlap -->
+    <div class="about-content">
+      <div class="about-pic">
+        <img src="shannon.jpg" alt="Profile Picture">
+      </div>
+      <p class="description">
+        I am a 21 year old game programmer that's currently a student at Greenwich University in London.<br><br>
+        I describe myself as a problem solver that seeks opportunities to learn new things, while constantly improving my skills. I enjoy creating games that feel great to play and are cute, with clean code that’s easy to read. I thrive on difficult challenges—even if it means holding on a little too long when a solution is elusive.<br><br>
+        Want to know more? You can find my contact information and my CV at the top.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Trailer Section -->
+  <section class="trailer-section">
+    <h2 class="trailer-title">A Short Trailer</h2>
+    <div class="trailer-video-wrapper">
+      <!-- The YouTube IFrame API will create the player in this div -->
+      <div id="player"></div>
+      <!-- Custom play button overlay (visible until clicked) -->
+      <div class="play-btn">
+        <i class="fas fa-play"></i>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Technical Experience Section -->
+  <section class="technical-experience">
+    <h2>Technical Experience</h2>
+    <div class="tags">
+      <span class="tag">C#</span>
+      <span class="tag">C++</span>
+      <span class="tag">Unity</span>
+      <span class="tag">Unreal Engine</span>
+      <span class="tag">Maya</span>
+    </div>
+  </section>
+  
+  <!-- Game Collection Section -->
+  <section class="game-collection">
+    <h2>Game Collection</h2>
+    <div class="game-grid">
+      <!-- Card 1: Coco's Treat Dash -->
+      <a href="Coco's Treat Dash.html" class="card-with-box">
+        <div class="card-top">
+          <iframe width="100%" height="100%" 
+            src="https://www.youtube.com/embed/ac4GIXZXnwo?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=ac4GIXZXnwo" 
+            title="Coco's Treat Dash" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-user"></i> 1 Player</span>
+            <span><i class="fas fa-clock"></i> 6 Weeks</span>
+            <span><i class="fas fa-code"></i> Unity (C#)</span>
+          </div>
+          <div class="game-overlay">
+            <h3>Coco's Treat Dash</h3>
+            <span class="game-subtitle">Gameplay Programmer</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>Coco's Treat Dash</h4>
+          <p>Coco's Treat Dash is a 3D Pacman inspired game.</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+      <!-- Card 2: Hellbound Escape -->
+      <a href="HellboundEscape.html" class="card-with-box">
+        <div class="card-top">
+          <iframe width="100%" height="100%" 
+            src="https://www.youtube.com/embed/WOweDd9oBq0?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=WOweDd9oBq0" 
+            title="Hellbound Escape" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-user"></i> 1 Player</span>
+            <span><i class="fas fa-clock"></i> 4 Weeks</span>
+            <span><i class="fas fa-code"></i> OOP Programming</span>
+          </div>
+          <div class="game-overlay">
+            <h3>Hellbound Escape</h3>
+            <span class="game-subtitle">Prototype</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>Hellbound Escape</h4>
+          <p>Hellbound Escape is an OOP prototype.</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+      <!-- Card 3: Dark Descent -->
+      <a href="DarkDescent.html" class="card-with-box">
+        <div class="card-top">
+          <iframe width="100%" height="100%" 
+            src="https://www.youtube.com/embed/s9f7RmnwSqM?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=s9f7RmnwSqM" 
+            title="Dark Descent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-user"></i> 1 Player</span>
+            <span><i class="fas fa-clock"></i> 6 Weeks</span>
+            <span><i class="fas fa-code"></i> Unity</span>
+          </div>
+          <div class="game-overlay">
+            <h3>Dark Descent</h3>
+            <span class="game-subtitle">Gameplay Programmer</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>Dark Descent</h4>
+          <p>Dark Descent is a 2D Unity platformer game.</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+      <!-- Card 4: Deadzone: Outbreak (Prototype) -->
+      <a href="DeadzoneOutbreak.html" class="card-with-box">
+        <div class="card-top">
+          <!-- Display a prototype icon image instead of a video -->
+          <img src="prototype-icon.png" alt="Prototype" style="width:100%; height:100%; object-fit:contain;">
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-user"></i> 1 Player</span>
+            <span><i class="fas fa-clock"></i> In Progress</span>
+            <span><i class="fas fa-cogs"></i> Unreal Engine</span>
+            <span><img src="prototype-icon.png" alt="Prototype" style="width:24px; height:24px; vertical-align:middle;"> Prototype</span>
+          </div>
+          <div class="game-overlay">
+            <h3>Deadzone: Outbreak</h3>
+            <span class="game-subtitle">(Prototype)</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>Deadzone: Outbreak</h4>
+          <p>Deadzone: Outbreak is an Unreal Engine game currently in development (Prototype).</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  
+  <footer>
+    <p>© <span class="footer-text">2025 Shannon Grant. All Rights Reserved.</span></p>
+  </footer>
+  
+  <!-- YouTube IFrame API Script for the Homepage Trailer -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '644',
+        width: '1152',
+        videoId: 'NO97sn75OW0', // Homepage trailer video ID
+        playerVars: {
+          'autoplay': 0,    // Do not auto-play until clicked
+          'controls': 1,
+          'modestbranding': 1,
+          'rel': 0,
+          'mute': 1        // Keep muted initially
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+    
+    function onPlayerReady(event) {
+      // Wait for user click to start
+      document.querySelector('.play-btn').style.display = 'block';
+    }
+    
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PAUSED) {
+        document.querySelector('.play-btn').style.display = 'block';
+      } else if (event.data == YT.PlayerState.PLAYING) {
+        document.querySelector('.play-btn').style.display = 'none';
+      }
+    }
+    
+    const playButton = document.querySelector('.play-btn');
+    playButton.addEventListener('click', function() {
+      player.playVideo();
+      playButton.style.display = 'none';
+    });
+  </script>
+  
+  <!-- Fade-out Transition Script for Card Links -->
+  <script>
+    document.querySelectorAll('a.card-with-box').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const url = this.getAttribute('href');
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+          window.location.href = url;
+        }, 500);
+      });
+    });
+  </script>
+</body>
+</html>

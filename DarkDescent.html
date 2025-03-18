@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Descent - Details</title>
+  <!-- Load Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Load Google Fonts for Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to main and details CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+  <!-- Go Back Button -->
+  <a href="index.html" class="back-btn">Go Back</a>
+  
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="profile-text-top">
+        <h1>Shannon Grant</h1>
+        <p class="title">Game Programmer</p>
+      </div>
+      <div class="social-links">
+        <a href="https://uk.linkedin.com/in/shannon-grant-390736309" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://milkobop.itch.io/" target="_blank" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a>
+        <a href="https://www.youtube.com/@Milkobop" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="CV.pdf" target="_blank" class="cv-btn" aria-label="CV">CV</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main class="details-container">
+    <!-- Video Section -->
+    <section class="game-video-section">
+      <div class="video-wrapper">
+        <iframe width="1152" height="644"
+          src="https://www.youtube.com/embed/s9f7RmnwSqM?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0"
+          title="Dark Descent" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <h1 class="game-title">Dark Descent</h1>
+    </section>
+    
+    <!-- Cards Section: About & Project Info -->
+    <section class="cards-section">
+      <!-- About Card -->
+      <div class="card" id="about-card">
+        <h2>About</h2>
+        <p>
+          Dark Descent is a 2D Unity platformer where you play as Lily, navigating a treacherous cave teeming with monsters. To escape, you must defeat enemies and search for hidden keys. Although the prototype is complete, additional levels, a more robust storyline, and a defined ending are in development.
+        </p>
+      </div>
+      <!-- Project Info Card -->
+      <div class="card" id="project-info-card">
+        <h2>Project Info</h2>
+        <ul class="project-info-list">
+          <li><i class="fas fa-gamepad"></i> Role: Gameplay Programmer</li>
+          <li><i class="fas fa-users"></i> Team Size: 1</li>
+          <li><i class="fas fa-clock"></i> 6 Weeks</li>
+          <li><i class="fab fa-unity"></i> Engine: Unity, using C#</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Full-Width Sections -->
+    <section class="full-section" id="introduction">
+      <h2 class="section-title">Introduction</h2>
+      <p>
+        Dark Descent was created to explore 2D platforming mechanics with a focus on level design and enemy AI. The prototype emphasizes tight controls, challenging puzzles, and a suspenseful atmosphere. For more technical details, refer to my GitHub and itch.io pages.
+      </p>
+    </section>
+    <section class="full-section" id="what-i-learned">
+      <h2 class="section-title">What I Learned</h2>
+      <p>
+        Through Dark Descent, I refined my skills in Unity’s 2D tools and C#. I learned how to create responsive character controls, implement enemy pathfinding, and design engaging levels. The experience also highlighted the importance of playtesting and iterative design.
+      </p>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="details-footer">
+    <p>
+      <a href="https://milkobop.itch.io/dark-descent" target="_blank">Play Dark Descent on itch.io</a>
+      or
+      <a href="https://github.com/milkobop" target="_blank">Check out the repository at GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
