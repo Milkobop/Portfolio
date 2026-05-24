@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FYP ECO - Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+  <a href="index.html" class="back-btn">Go Back</a>
+  <header>
+    <div class="header-container">
+      <div class="profile-text-top">
+        <h1>Shannon Grant</h1>
+        <p class="title">Game Programmer</p>
+      </div>
+      <div class="social-links">
+        <a href="https://uk.linkedin.com/in/shannon-grant-390736309" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://milkobop.itch.io/" target="_blank" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a>
+        <a href="https://www.youtube.com/@Milkobop" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="CV.pdf" target="_blank" class="cv-btn" aria-label="CV">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="details-container">
+    <div class="video-banner">
+      <iframe width="100%" height="100%"
+        src="https://www.youtube.com/embed/FxixtV3Blkg?autoplay=1&mute=1&controls=1&modestbranding=1&rel=0"
+        title="FYP ECO" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+    <h1 class="game-title">FYP ECO</h1>
+
+    <section class="cards-section">
+      <div class="card" id="about-card">
+        <h2>About</h2>
+        <p>
+          ECO is an ecosystem simulation built as my Final Year Project. Wolves hunt deer, deer graze on grass — each population dynamically rises and falls based on the others. The simulation explores emergent behaviour and predator-prey relationships in a living, breathing virtual world.
+        </p>
+      </div>
+      <div class="card" id="project-info-card">
+        <h2>Project Info</h2>
+        <ul class="project-info-list">
+          <li><i class="fas fa-gamepad"></i> Role: Sole Developer</li>
+          <li><i class="fas fa-users"></i> Team Size: 1</li>
+          <li><i class="fas fa-clock"></i> Duration: 7 Months</li>
+          <li><i class="fas fa-code"></i> Engine: Unity (C#)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="full-section" id="introduction">
+      <h2 class="section-title">Introduction</h2>
+      <p>
+        ECO was developed as my university Final Year Project, giving me the freedom to explore a topic I find genuinely fascinating: emergent systems and artificial life. The project simulates a simple food chain — grass, deer, and wolves — where each agent makes autonomous decisions using steering behaviours and state machines, resulting in an ecosystem that evolves without any scripted outcomes.
+      </p>
+    </section>
+
+    <section class="full-section" id="what-i-learned">
+      <h2 class="section-title">What I Learned</h2>
+      <p>
+        Designing and implementing autonomous agent AI using steering behaviours (seek, flee, wander) and finite state machines. Managing population balance in a dynamic simulation where small tuning changes have large emergent effects. Structuring a solo long-form project over 7 months, including research, prototyping, iteration, and documentation. Deepened my understanding of Unity's physics, spatial partitioning for performance, and data-driven design.
+      </p>
+    </section>
+  </main>
+
+  <footer class="details-footer">
+    <p>
+      <a href="https://github.com/milkobop" target="_blank">Check out the repository at GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
