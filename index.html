@@ -42,14 +42,13 @@
   
   <!-- About Section (Photo & Description) -->
   <section class="about-me">
-    <!-- Added extra top margin via CSS to avoid header overlap -->
     <div class="about-content">
       <div class="about-pic">
         <img src="shannon.jpg" alt="Profile Picture">
       </div>
       <p class="description">
         I am a 21 year old game programmer that's currently a student at Greenwich University in London.<br><br>
-        I describe myself as a problem solver that seeks opportunities to learn new things, while constantly improving my skills. I enjoy creating games that feel great to play and are cute, with clean code that’s easy to read. I thrive on difficult challenges—even if it means holding on a little too long when a solution is elusive.<br><br>
+        I describe myself as a problem solver that seeks opportunities to learn new things, while constantly improving my skills. I enjoy creating games that feel great to play and are cute, with clean code that's easy to read. I thrive on difficult challenges—even if it means holding on a little too long when a solution is elusive.<br><br>
         Want to know more? You can find my contact information and my CV at the top.
       </p>
     </div>
@@ -59,9 +58,7 @@
   <section class="trailer-section">
     <h2 class="trailer-title">A Short Trailer</h2>
     <div class="trailer-video-wrapper">
-      <!-- The YouTube IFrame API will create the player in this div -->
       <div id="player"></div>
-      <!-- Custom play button overlay (visible until clicked) -->
       <div class="play-btn">
         <i class="fas fa-play"></i>
       </div>
@@ -76,6 +73,7 @@
       <span class="tag">C++</span>
       <span class="tag">Unity</span>
       <span class="tag">Unreal Engine</span>
+      <span class="tag">HLSL</span>
       <span class="tag">Maya</span>
     </div>
   </section>
@@ -84,6 +82,7 @@
   <section class="game-collection">
     <h2>Game Collection</h2>
     <div class="game-grid">
+
       <!-- Card 1: Coco's Treat Dash -->
       <a href="Coco's Treat Dash.html" class="card-with-box">
         <div class="card-top">
@@ -110,6 +109,7 @@
           </div>
         </div>
       </a>
+
       <!-- Card 2: Hellbound Escape -->
       <a href="HellboundEscape.html" class="card-with-box">
         <div class="card-top">
@@ -136,6 +136,7 @@
           </div>
         </div>
       </a>
+
       <!-- Card 3: Dark Descent -->
       <a href="DarkDescent.html" class="card-with-box">
         <div class="card-top">
@@ -162,32 +163,197 @@
           </div>
         </div>
       </a>
+
       <!-- Card 4: Deadzone: Outbreak (Prototype) -->
- <!-- Card 4: Deadzone: Outbreak (Prototype) -->
-<a href="DeadzoneOutbreak.html" class="card-with-box">
-  <div class="card-top">
-    <!-- Updated image for the project -->
-    <img src="Deadzoneoutbreak.jpg" alt="Deadzone: Outbreak" style="width:100%; height:100%; object-fit:cover;">
-    <div class="info-strip-translucent">
-      <span><i class="fas fa-user"></i> 1 Player</span>
-      <span><i class="fas fa-clock"></i> In Progress</span>
-      <span><i class="fas fa-cogs"></i> Unreal Engine</span>
-      <span><i class="fas fa-wrench"></i> Prototype</span>
+      <a href="DeadzoneOutbreak.html" class="card-with-box">
+        <div class="card-top">
+          <img src="Deadzoneoutbreak.jpg" alt="Deadzone: Outbreak" style="width:100%; height:100%; object-fit:cover;">
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-user"></i> 1 Player</span>
+            <span><i class="fas fa-clock"></i> In Progress</span>
+            <span><i class="fas fa-cogs"></i> Unreal Engine</span>
+            <span><i class="fas fa-wrench"></i> Prototype</span>
+          </div>
+          <div class="game-overlay">
+            <h3>Deadzone: Outbreak</h3>
+            <span class="game-subtitle">(Prototype)</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>Deadzone: Outbreak</h4>
+          <p>Deadzone: Outbreak is an Unreal Engine game currently in development (Prototype).</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 5: FYP ECO -->
+      <a href="FYP_ECO.html" class="card-with-box">
+        <div class="card-top">
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/FxixtV3Blkg?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=FxixtV3Blkg"
+            title="FYP ECO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-user"></i> 1 Player</span>
+            <span><i class="fas fa-clock"></i> 7 Months</span>
+            <span><i class="fas fa-code"></i> Unity (C#)</span>
+          </div>
+          <div class="game-overlay">
+            <h3>FYP ECO</h3>
+            <span class="game-subtitle">Sole Developer</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>FYP ECO</h4>
+          <p>Eco is an ecosystem simulation where wolves hunt deer, deer graze on grass.</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 6: Probably Human -->
+      <!-- TODO: Replace the image src below with a gameplay screenshot, or swap for an iframe once you have a YouTube link -->
+      <a href="ProbablyHuman.html" class="card-with-box">
+        <div class="card-top">
+          <div style="width:100%; height:100%; background:#1a1a2e; display:flex; align-items:center; justify-content:center;">
+            <span style="color:#888; font-family:Roboto,sans-serif; font-size:0.9rem;">Video Coming Soon</span>
+          </div>
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-users"></i> Team of 4</span>
+            <span><i class="fas fa-clock"></i> 1 Month</span>
+            <span><i class="fas fa-code"></i> Unity (C#)</span>
+          </div>
+          <div class="game-overlay">
+            <h3>Probably Human</h3>
+            <span class="game-subtitle">Gameplay Programmer</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>Probably Human</h4>
+          <p>You are Airport Security. Your job is simple: don't let the aliens through.</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 7: Catpuccino -->
+      <a href="Catpuccino.html" class="card-with-box">
+        <div class="card-top">
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/iL2otmAUKgQ?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=iL2otmAUKgQ"
+            title="Catpuccino" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-users"></i> Team of 5</span>
+            <span><i class="fas fa-clock"></i> 2 Months</span>
+            <span><i class="fas fa-code"></i> Unity (C#)</span>
+          </div>
+          <div class="game-overlay">
+            <h3>Catpuccino</h3>
+            <span class="game-subtitle">Gameplay Programmer</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>Catpuccino</h4>
+          <p>Build the purr-fect café, one Catpuccino at a time.</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 8: Dreamscape Island (Shader Programming) -->
+      <a href="ShaderProgramming.html" class="card-with-box">
+        <div class="card-top">
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/JZT0EwiTYFw?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=JZT0EwiTYFw"
+            title="Dreamscape Island" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-user"></i> Solo</span>
+            <span><i class="fas fa-cogs"></i> Unreal Engine</span>
+            <span><i class="fas fa-code"></i> HLSL</span>
+          </div>
+          <div class="game-overlay">
+            <h3>Dreamscape Island</h3>
+            <span class="game-subtitle">Shader Programmer</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>Dreamscape Island</h4>
+          <p>An interactive shader programming showcase built in Unreal Engine.</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 9: Little Boat (Game Jam) -->
+      <a href="LittleBoat.html" class="card-with-box">
+        <div class="card-top">
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/m-3ovWhJ9cg?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=m-3ovWhJ9cg"
+            title="Little Boat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-users"></i> Team of 4</span>
+            <span><i class="fas fa-clock"></i> 2 Days</span>
+            <span><i class="fas fa-code"></i> Unity (C#)</span>
+            <span><i class="fas fa-gamepad"></i> Game Jam</span>
+          </div>
+          <div class="game-overlay">
+            <h3>Little Boat</h3>
+            <span class="game-subtitle">Gameplay Programmer</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>Little Boat</h4>
+          <p>Guide your little origami boat across the pond!</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 10: Thug Life (Global Game Jam 2026) -->
+      <a href="ThugLife.html" class="card-with-box">
+        <div class="card-top">
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/WnVXUKbKDXo?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=WnVXUKbKDXo"
+            title="Thug Life" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="info-strip-translucent">
+            <span><i class="fas fa-users"></i> Team of 4</span>
+            <span><i class="fas fa-clock"></i> 48 Hours</span>
+            <span><i class="fas fa-code"></i> Unity (C#)</span>
+            <span><i class="fas fa-gamepad"></i> Global Game Jam 2026</span>
+          </div>
+          <div class="game-overlay">
+            <h3>Thug Life</h3>
+            <span class="game-subtitle">Gameplay Programmer</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <h4>Thug Life</h4>
+          <p>Thug Life is a game made in 48 hours for Global Game Jam 2026.</p>
+          <div class="arrow-top-right">
+            <span class="arrow-text">More Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+
     </div>
-    <div class="game-overlay">
-      <h3>Deadzone: Outbreak</h3>
-      <span class="game-subtitle">(Prototype)</span>
-    </div>
-  </div>
-  <div class="card-bottom">
-    <h4>Deadzone: Outbreak</h4>
-    <p>Deadzone: Outbreak is an Unreal Engine game currently in development (Prototype).</p>
-    <div class="arrow-top-right">
-      <span class="arrow-text">More Information</span>
-      <i class="fas fa-arrow-right"></i>
-    </div>
-  </div>
-</a>
   </section>
   
   <footer>
@@ -202,13 +368,13 @@
       player = new YT.Player('player', {
         height: '644',
         width: '1152',
-        videoId: 'NO97sn75OW0', // Homepage trailer video ID
+        videoId: 'NO97sn75OW0',
         playerVars: {
-          'autoplay': 0,    // Do not auto-play until clicked
+          'autoplay': 0,
           'controls': 1,
           'modestbranding': 1,
           'rel': 0,
-          'mute': 1        // Keep muted initially
+          'mute': 1
         },
         events: {
           'onReady': onPlayerReady,
@@ -218,7 +384,6 @@
     }
     
     function onPlayerReady(event) {
-      // Wait for user click to start
       document.querySelector('.play-btn').style.display = 'block';
     }
     
@@ -250,11 +415,10 @@
       });
     });
     window.addEventListener("pageshow", function(event) {
-  if (event.persisted) {
-    window.location.reload();
-  }
-});
-
+      if (event.persisted) {
+        window.location.reload();
+      }
+    });
   </script>
   
 </body>
