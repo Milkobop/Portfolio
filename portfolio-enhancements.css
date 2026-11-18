@@ -32,3 +32,10 @@ html{scroll-behavior:smooth}
 .portfolio-hero:focus-within,.portfolio-card:focus-within{outline-offset:3px}
 @media(max-width:768px){.portfolio-hero{margin-top:195px;padding:25px 20px}.portfolio-hero,.portfolio-section{width:92%}.portfolio-cards{grid-template-columns:1fr}.hero-actions{align-items:stretch}.hero-button{justify-content:center}.profile-text-top .title{font-size:1.15rem}.about-me{margin-top:45px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-button,.filter-button{transition:none}}
+
+/* Floating back-to-top control */
+.back-to-top{position:fixed;right:24px;bottom:24px;z-index:9998;display:flex;align-items:center;gap:9px;padding:12px 17px;border:2px solid var(--milk-pink);border-radius:999px;background:#292929;color:#fff;font:700 1rem Roboto,Arial,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.35);cursor:pointer;transition:background .2s,transform .2s}
+.back-to-top[hidden]{display:none!important}
+.back-to-top:hover,.back-to-top:focus-visible{background:var(--milk-teal);color:#171717;transform:translateY(-3px);outline-offset:3px}
+@media(max-width:768px){.back-to-top{right:14px;bottom:14px;padding:12px 15px}}
+@media(prefers-reduced-motion:reduce){.back-to-top{transition:none}}
