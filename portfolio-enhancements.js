@@ -20,3 +20,16 @@ document.addEventListener('DOMContentLoaded',function(){
  });
  if(counter)counter.textContent=cards.length+' projects shown';
 });
+
+// Reveal the accessible back-to-top button after scrolling down.
+document.addEventListener('DOMContentLoaded',function(){
+ const button=document.getElementById('back-to-top');
+ if(!button)return;
+ function updateVisibility(){button.hidden=window.scrollY<450;}
+ button.addEventListener('click',function(){
+  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({top:0,behavior:reduced?'instant':'smooth'});
+ });
+ window.addEventListener('scroll',updateVisibility,{passive:true});
+ updateVisibility();
+});
