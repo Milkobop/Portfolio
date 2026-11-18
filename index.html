@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <!-- Link to your custom CSS -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio-enhancements.css">
   <style>
     /* Inline override if needed */
     .profile-section .description {
@@ -40,6 +41,7 @@
     </div>
   </header>
   
+<section class="portfolio-hero" aria-labelledby="hero-heading"><p class="hero-eyebrow">Games by Milkobop · London, UK</p><h2 id="hero-heading">Creative game design meets thoughtful programming.</h2><p>I'm Shannon, a games designer and gameplay programmer who loves turning ideas into engaging, interactive experiences through Unity, C#, Unreal Engine and Blueprints. I especially enjoy AI, gameplay systems and responsive game feel.</p><div class="hero-actions"><a class="hero-button primary" href="#projects">Explore my games</a><a class="hero-button" href="#gameplay-systems">Gameplay systems</a><a class="hero-button" href="#experience">My experience</a></div></section>
   <!-- About Section (Photo & Description) -->
   <section class="about-me">
     <div class="about-content">
@@ -83,13 +85,27 @@
     </div>
   </section>
   
+<section class="portfolio-section" id="experience"><p class="section-eyebrow">Beyond the projects</p><h2>Professional Experience</h2><p class="portfolio-intro">I combine gameplay development, technical education and practical IT problem-solving.</p><div class="portfolio-cards">
+<article class="portfolio-card"><p class="minor">Current · Games education</p><h3>Games Technician · LCCA</h3><p>I support aspiring game developers, troubleshoot Unreal Engine and UEFN projects, and create technical workshops and learning resources.</p></article>
+<article class="portfolio-card"><p class="minor">Current · Matchday operations</p><h3>Matchday IT Support · Arsenal FC</h3><p>I support matchday IT and IPTV operations, applying communication and troubleshooting skills in a live environment.</p></article>
+<article class="portfolio-card"><p class="minor">Previous · Games development</p><h3>Gameplay Programmer · AGE Interactive</h3><p>Previous professional gameplay programming experience, combining creative ideas with technical implementation.</p></article></div></section>
+<section class="portfolio-section" id="gameplay-systems"><p class="section-eyebrow">Under the hood</p><h2>Gameplay Programming &amp; Systems</h2><p class="portfolio-intro">Examples of the mechanics and development challenges I enjoy working on.</p><div class="portfolio-cards">
+<article class="portfolio-card"><p class="minor">Unity · C#</p><h3>Autonomous Agent AI</h3><p>Steering behaviours, finite state machines and predator–prey simulation.</p><a href="FYP_ECO.html#technical-breakdown">Explore ECO</a></article>
+<article class="portfolio-card"><p class="minor">Unity · C#</p><h3>Character Abilities &amp; AI</h3><p>Bark abilities, enemy reactions and power-up interactions.</p><a href="Coco's Treat Dash.html#technical-breakdown">Explore Coco's Treat Dash</a></article>
+<article class="portfolio-card"><p class="minor">Unreal Engine · Prototype</p><h3>FPS Survival Interactions</h3><p>Enemy AI, player interactions and survival systems under development.</p><a href="DeadzoneOutbreak.html#technical-breakdown">Explore Deadzone</a></article>
+<article class="portfolio-card"><p class="minor">Unity · C#</p><h3>Orders, Queues &amp; UI</h3><p>Management systems and gameplay feedback in a cosy café game.</p><a href="Catpuccino.html#technical-breakdown">Explore Catpuccino</a></article></div></section>
+<section class="portfolio-section" id="workshops"><p class="section-eyebrow">Sharing what I learn</p><h2>Workshops &amp; Credentials</h2><div class="portfolio-cards">
+<article class="portfolio-card"><p class="minor">Technical teaching · LCCA</p><h3>Unreal Engine Workshops</h3><p>Supporting students with Blueprint mechanics, interactive systems, technical troubleshooting and game development workflows.</p></article>
+<article class="portfolio-card"><p class="minor">In progress</p><h3>Unreal Authorized Instructor Pathway</h3><p>Accepted onto the pathway and preparing teaching and assessment work. Not yet listed as a completed certification.</p></article>
+<article class="portfolio-card"><p class="minor">Completed education</p><h3>First-Class Honours</h3><p>Games Design and Development (Programming), University of Greenwich.</p></article></div></section>
   <!-- Game Collection Section -->
-  <section class="game-collection">
+  <section class="game-collection" id="projects">
     <h2>Game Collection</h2>
-    <div class="game-grid">
+    <p class="portfolio-intro">Explore projects by engine or focus, and open a project to see its technical breakdown.</p><div class="project-filters" role="group" aria-label="Filter projects"><button class="filter-button" type="button" data-project-filter="all" aria-pressed="true">All</button><button class="filter-button" type="button" data-project-filter="unity" aria-pressed="false">Unity</button><button class="filter-button" type="button" data-project-filter="unreal" aria-pressed="false">Unreal</button><button class="filter-button" type="button" data-project-filter="ai" aria-pressed="false">AI &amp; Systems</button><button class="filter-button" type="button" data-project-filter="team" aria-pressed="false">Team projects</button></div><p class="game-count" data-project-count aria-live="polite"></p>
+<div class="game-grid">
 
       <!-- Card 1: Coco's Treat Dash -->
-      <a href="Coco's Treat Dash.html" class="card-with-box">
+      <a href="Coco's Treat Dash.html" class="card-with-box" data-categories="unity ai team">
         <div class="card-top">
           <iframe width="100%" height="100%" 
             src="https://www.youtube.com/embed/ac4GIXZXnwo?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=ac4GIXZXnwo" 
@@ -116,7 +132,7 @@
       </a>
 
       <!-- Card 2: Hellbound Escape -->
-      <a href="HellboundEscape.html" class="card-with-box">
+      <a href="HellboundEscape.html" class="card-with-box" data-categories="unity">
         <div class="card-top">
           <iframe width="100%" height="100%" 
             src="https://www.youtube.com/embed/WOweDd9oBq0?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=WOweDd9oBq0" 
@@ -143,7 +159,7 @@
       </a>
 
       <!-- Card 3: Dark Descent -->
-      <a href="DarkDescent.html" class="card-with-box">
+      <a href="DarkDescent.html" class="card-with-box" data-categories="unity">
         <div class="card-top">
           <iframe width="100%" height="100%" 
             src="https://www.youtube.com/embed/s9f7RmnwSqM?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=s9f7RmnwSqM" 
@@ -170,7 +186,7 @@
       </a>
 
       <!-- Card 4: Deadzone: Outbreak (Prototype) -->
-      <a href="DeadzoneOutbreak.html" class="card-with-box">
+      <a href="DeadzoneOutbreak.html" class="card-with-box" data-categories="unreal ai">
         <div class="card-top">
           <img src="Deadzoneoutbreak.jpg" alt="Deadzone: Outbreak" style="width:100%; height:100%; object-fit:cover;">
           <div class="info-strip-translucent">
@@ -195,7 +211,7 @@
       </a>
 
       <!-- Card 5: FYP ECO -->
-      <a href="FYP_ECO.html" class="card-with-box">
+      <a href="FYP_ECO.html" class="card-with-box" data-categories="unity ai">
         <div class="card-top">
           <iframe width="100%" height="100%"
             src="https://www.youtube.com/embed/FxixtV3Blkg?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=FxixtV3Blkg"
@@ -223,7 +239,7 @@
 
       <!-- Card 6: Probably Human -->
       <!-- TODO: Replace the image src below with a gameplay screenshot, or swap for an iframe once you have a YouTube link -->
-      <a href="ProbablyHuman.html" class="card-with-box">
+      <a href="ProbablyHuman.html" class="card-with-box" data-categories="unity team">
         <div class="card-top">
           <div style="width:100%; height:100%; background:#1a1a2e; display:flex; align-items:center; justify-content:center;">
             <span style="color:#888; font-family:Roboto,sans-serif; font-size:0.9rem;">Video Coming Soon</span>
@@ -249,7 +265,7 @@
       </a>
 
       <!-- Card 7: Catpuccino -->
-      <a href="Catpuccino.html" class="card-with-box">
+      <a href="Catpuccino.html" class="card-with-box" data-categories="unity team">
         <div class="card-top">
           <iframe width="100%" height="100%"
             src="https://www.youtube.com/embed/iL2otmAUKgQ?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=iL2otmAUKgQ"
@@ -276,7 +292,7 @@
       </a>
 
       <!-- Card 8: Dreamscape Island (Shader Programming) -->
-      <a href="ShaderProgramming.html" class="card-with-box">
+      <a href="ShaderProgramming.html" class="card-with-box" data-categories="unity">
         <div class="card-top">
           <iframe width="100%" height="100%"
             src="https://www.youtube.com/embed/JZT0EwiTYFw?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=JZT0EwiTYFw"
@@ -303,7 +319,7 @@
       </a>
 
       <!-- Card 9: Little Boat (Game Jam) -->
-      <a href="LittleBoat.html" class="card-with-box">
+      <a href="LittleBoat.html" class="card-with-box" data-categories="unity team">
         <div class="card-top">
           <iframe width="100%" height="100%"
             src="https://www.youtube.com/embed/m-3ovWhJ9cg?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=m-3ovWhJ9cg"
@@ -331,7 +347,7 @@
       </a>
 
       <!-- Card 10: Thug Life (Global Game Jam 2026) -->
-      <a href="ThugLife.html" class="card-with-box">
+      <a href="ThugLife.html" class="card-with-box" data-categories="unity team">
         <div class="card-top">
           <iframe width="100%" height="100%"
             src="https://www.youtube.com/embed/WnVXUKbKDXo?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=WnVXUKbKDXo"
@@ -362,9 +378,10 @@
   </section>
   
   <footer>
-    <p>© <span class="footer-text">2025 Shannon Grant. All Rights Reserved.</span></p>
+    <p>© <span class="footer-text">2026 Shannon Grant. All Rights Reserved.</span></p>
   </footer>
   
+  <script src="portfolio-enhancements.js" defer></script>
   <!-- YouTube IFrame API Script for the Homepage Trailer -->
   <script src="https://www.youtube.com/iframe_api"></script>
   <script>
