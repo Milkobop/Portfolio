@@ -39,27 +39,3 @@ html{scroll-behavior:smooth}
 .back-to-top:hover,.back-to-top:focus-visible{background:var(--milk-teal);color:#171717;transform:translateY(-3px);outline-offset:3px}
 @media(max-width:768px){.back-to-top{right:14px;bottom:14px;padding:12px 15px}}
 @media(prefers-reduced-motion:reduce){.back-to-top{transition:none}}
-
-/* Milkobop's animated kitten / Back to Top button. No external assets required. */
-.kitty-top{padding:8px 13px 7px;flex-direction:column;gap:3px;min-width:74px;min-height:88px;overflow:visible;background:#262328;border-color:#e29ba7;isolation:isolate}
-.kitty-top .kitty-label{font-size:.83rem;line-height:1.1;color:#fff}
-.kitty-mascot{position:relative;display:block;width:52px;height:54px;animation:kitty-float 3s ease-in-out infinite}
-.kitty-head{position:absolute;inset:11px 2px 2px;z-index:2;border:2px solid #8c626c;background:#f5c4cb;border-radius:47% 47% 45% 45%;box-shadow:inset 0 -4px 0 #ebb2bd}
-.kitty-ear{position:absolute;top:-12px;width:19px;height:24px;background:#f5c4cb;border:2px solid #8c626c;border-radius:4px 15px 2px 2px;z-index:-1}
-.kitty-ear::after{content:"";position:absolute;inset:5px 4px 3px;background:#df8d9f;border-radius:2px 9px 2px 2px}
-.kitty-ear-left{left:1px;transform:rotate(-17deg)}
-.kitty-ear-right{right:1px;transform:scaleX(-1) rotate(-17deg)}
-.kitty-eye{position:absolute;top:16px;width:6px;height:8px;border-radius:50%;background:#3b3035;transform-origin:center;animation:kitty-blink 5.5s infinite}
-.kitty-eye-left{left:11px}.kitty-eye-right{right:11px}
-.kitty-nose{position:absolute;top:25px;left:50%;width:7px;height:5px;transform:translateX(-50%);background:#9b6172;border-radius:50% 50% 65% 65%}
-.kitty-mouth{position:absolute;top:31px;left:50%;width:10px;height:5px;transform:translateX(-50%);border-bottom:2px solid #9b6172;border-radius:0 0 70% 70%}
-.kitty-cheek{position:absolute;top:27px;width:8px;height:5px;background:#e795a7;border-radius:50%;opacity:.9}
-.kitty-cheek-left{left:5px}.kitty-cheek-right{right:5px}
-.kitty-tail{position:absolute;right:-11px;bottom:7px;width:15px;height:31px;border:6px solid #f5c4cb;border-left:0;border-bottom:0;border-radius:0 22px 0 0;transform-origin:bottom left;animation:kitty-wag 2.2s ease-in-out infinite alternate}
-.kitty-top:hover .kitty-mascot,.kitty-top:focus-visible .kitty-mascot{animation-duration:1.2s}
-.kitty-top:hover .kitty-label,.kitty-top:focus-visible .kitty-label{color:#171717}
-@keyframes kitty-blink{0%,43%,47%,100%{transform:scaleY(1)}45%{transform:scaleY(.1)}}
-@keyframes kitty-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-@keyframes kitty-wag{from{transform:rotate(-9deg)}to{transform:rotate(12deg)}}
-@media(max-width:768px){.kitty-top{min-width:63px;min-height:79px;padding:6px 9px}}
-@media(prefers-reduced-motion:reduce){.kitty-mascot,.kitty-eye,.kitty-tail{animation:none!important}}
