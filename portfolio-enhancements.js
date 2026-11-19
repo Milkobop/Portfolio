@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded',function(){
 document.addEventListener('DOMContentLoaded',function(){
  const button=document.getElementById('back-to-top');
  if(!button)return;
- function updateVisibility(){button.hidden=false;}
+ function updateVisibility(){button.hidden=window.scrollY<450;}
  button.addEventListener('click',function(){
   const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   window.scrollTo({top:0,behavior:reduced?'instant':'smooth'});
